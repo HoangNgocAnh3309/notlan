@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace ThuVien
         public Form1()
         {
             InitializeComponent();
+            label3.Text = "\"Thư viện không chỉ là nơi giữ sách, đó là\nnơi giữ gìn tri thức và tâm hồn của nhân\nloại.\"";
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+      
     }
 }

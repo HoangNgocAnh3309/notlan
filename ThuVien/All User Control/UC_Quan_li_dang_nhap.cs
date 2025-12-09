@@ -16,5 +16,11 @@ namespace ThuVien.All_User_Control
         {
             InitializeComponent();
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+
+        }
     }
 }

@@ -23,6 +23,28 @@ namespace ThuVien
         {
 
         }
-      
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            uC_dang_nhap_thu_thu1.Visible = true;
+            uC_dang_nhap_thu_thu1.BringToFront();
+        }
+
+        private void uC_dang_nhap_thu_thu1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            uC_doc_gia_dang_nhap1.Visible = true;
+            uC_doc_gia_dang_nhap1.BringToFront();
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            uC_Quan_li_dang_nhap1.Visible=true;
+            uC_Quan_li_dang_nhap1.BringToFront();
+        }
     }
 }

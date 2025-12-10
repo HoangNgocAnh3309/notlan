@@ -70,6 +70,24 @@
     <Compile Include="All User Control\UC_Quan_li_dang_nhap.Designer.cs">
       <DependentUpon>UC_Quan_li_dang_nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB_doc_gia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_doc_gia.Designer.cs">
+      <DependentUpon>DB_doc_gia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_quan_li.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_quan_li.Designer.cs">
+      <DependentUpon>DB_quan_li.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_thu_thu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_thu_thu.Designer.cs">
+      <DependentUpon>DB_thu_thu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +104,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Quan_li_dang_nhap.resx">
       <DependentUpon>UC_Quan_li_dang_nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_doc_gia.resx">
+      <DependentUpon>DB_doc_gia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_quan_li.resx">
+      <DependentUpon>DB_quan_li.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_thu_thu.resx">
+      <DependentUpon>DB_thu_thu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

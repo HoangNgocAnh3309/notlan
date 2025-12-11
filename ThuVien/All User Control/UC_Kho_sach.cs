@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ThuVien
+namespace ThuVien.All_User_Control
 {
-    public partial class DB_quan_li : Form
+    public partial class UC_Kho_sach : UserControl
     {
-        public DB_quan_li()
+        public UC_Kho_sach()
         {
             InitializeComponent();
-        }
-
-        private void guna2Button8_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

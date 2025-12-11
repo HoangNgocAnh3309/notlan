@@ -64,11 +64,23 @@
     <Compile Include="All User Control\UC_doc_gia_dang_nhap.Designer.cs">
       <DependentUpon>UC_doc_gia_dang_nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_Kho_sach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Kho_sach.Designer.cs">
+      <DependentUpon>UC_Kho_sach.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_Quan_li_dang_nhap.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="All User Control\UC_Quan_li_dang_nhap.Designer.cs">
       <DependentUpon>UC_Quan_li_dang_nhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_them_sach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_them_sach.Designer.cs">
+      <DependentUpon>UC_them_sach.cs</DependentUpon>
     </Compile>
     <Compile Include="DB_doc_gia.cs">
       <SubType>Form</SubType>
@@ -102,8 +114,14 @@
     <EmbeddedResource Include="All User Control\UC_doc_gia_dang_nhap.resx">
       <DependentUpon>UC_doc_gia_dang_nhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_Kho_sach.resx">
+      <DependentUpon>UC_Kho_sach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Quan_li_dang_nhap.resx">
       <DependentUpon>UC_Quan_li_dang_nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_them_sach.resx">
+      <DependentUpon>UC_them_sach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DB_doc_gia.resx">
       <DependentUpon>DB_doc_gia.cs</DependentUpon>

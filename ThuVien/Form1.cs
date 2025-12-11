@@ -46,5 +46,19 @@ namespace ThuVien
             uC_Quan_li_dang_nhap1.Visible=true;
             uC_Quan_li_dang_nhap1.BringToFront();
         }
+        private void hover_doc_gia(object sender, EventArgs e)
+        {
+            guna2Button4.BorderColor = ColorTranslator.FromHtml("#4338CA");
+            guna2Button4.ForeColor = ColorTranslator.FromHtml("#4338CA");
+        }
+        private void laeve_doc_gia(object sender, EventArgs e)
+        {
+            guna2Button7.FillColor = ColorTranslator.FromHtml("#DBEAFE");
+        }
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

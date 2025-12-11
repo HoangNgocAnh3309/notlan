@@ -16,7 +16,7 @@ namespace ThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DB_doc_gia());
+            Application.Run(new Form1());
         }
     }
 }

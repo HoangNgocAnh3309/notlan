@@ -22,5 +22,14 @@ namespace ThuVien.All_User_Control
             this.Visible = false;
 
         }
+
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
+            if(txt_password.Text == "123")
+            {
+                DB_doc_gia db =new DB_doc_gia();
+                db.Show();
+            }
+        }
     }
 }

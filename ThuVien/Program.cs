@@ -16,7 +16,7 @@ namespace ThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DB_quan_li());
+            Application.Run(new Form1());
         }
     }
 }

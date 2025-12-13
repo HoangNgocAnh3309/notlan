@@ -27,5 +27,46 @@ namespace ThuVien
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            uC_TongQuanQuanLy2.Visible = true;
+            uC_TongQuanQuanLy2.BringToFront();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            uC_KhoSach_FormQuanLy2.Visible=true;
+            uC_KhoSach_FormQuanLy2.BringToFront();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            uC_TroLyAI_FormQuanLy2.Visible=true;
+            uC_TroLyAI_FormQuanLy2.BringToFront();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            uC_QuanLyMuonTra_FormQuanLy2.Visible=true;
+            uC_QuanLyMuonTra_FormQuanLy2.BringToFront();
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            uC_NhanSu_FormQuanLy2.Visible=true;
+            uC_NhanSu_FormQuanLy2.BringToFront();
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            uC_CaiDat2.Visible = true;
+            uC_CaiDat2.BringToFront();
+        }
+
+        private void guna2Button8_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

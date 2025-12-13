@@ -97,6 +97,12 @@
     <Compile Include="All User Control\UC_doc_gia_dang_nhap.Designer.cs">
       <DependentUpon>UC_doc_gia_dang_nhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_Kham_pha_DG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Kham_pha_DG.Designer.cs">
+      <DependentUpon>UC_Kham_pha_DG.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_Kho_sach.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_doc_gia_dang_nhap.resx">
       <DependentUpon>UC_doc_gia_dang_nhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_Kham_pha_DG.resx">
+      <DependentUpon>UC_Kham_pha_DG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_Kho_sach.resx">
       <DependentUpon>UC_Kho_sach.cs</DependentUpon>

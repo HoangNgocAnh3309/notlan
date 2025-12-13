@@ -53,12 +53,12 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.uC_dang_nhap_thu_thu1 = new ThuVien.All_User_Control.UC_dang_nhap_thu_thu();
-            this.uC_doc_gia_dang_nhap1 = new ThuVien.All_User_Control.UC_doc_gia_dang_nhap();
-            this.uC_Quan_li_dang_nhap1 = new ThuVien.All_User_Control.UC_Quan_li_dang_nhap();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_dang_nhap_thu_thu1 = new ThuVien.All_User_Control.UC_dang_nhap_thu_thu();
+            this.uC_doc_gia_dang_nhap1 = new ThuVien.All_User_Control.UC_doc_gia_dang_nhap();
+            this.uC_Quan_li_dang_nhap1 = new ThuVien.All_User_Control.UC_Quan_li_dang_nhap();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -225,6 +225,7 @@
             this.label9.Size = new System.Drawing.Size(153, 13);
             this.label9.TabIndex = 18;
             this.label9.Text = "Báo cáo, nhân sự và cấu hình.";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -236,6 +237,7 @@
             this.label8.Size = new System.Drawing.Size(182, 13);
             this.label8.TabIndex = 17;
             this.label8.Text = "Quản lý sách và duyệt đơn mượn trả.";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -247,6 +249,7 @@
             this.label7.Size = new System.Drawing.Size(177, 13);
             this.label7.TabIndex = 16;
             this.label7.Text = "Tìm kiếm mượn sách và xem lịch sử.";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // guna2Button9
             // 
@@ -267,6 +270,7 @@
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.Size = new System.Drawing.Size(45, 45);
             this.guna2Button9.TabIndex = 15;
+            this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
             // 
             // guna2Button8
             // 
@@ -287,6 +291,7 @@
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(45, 45);
             this.guna2Button8.TabIndex = 14;
+            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
             // guna2Button7
             // 
@@ -300,13 +305,14 @@
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
-            this.guna2Button7.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.guna2Button7.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
             this.guna2Button7.ImageSize = new System.Drawing.Size(25, 25);
             this.guna2Button7.Location = new System.Drawing.Point(130, 245);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(45, 45);
             this.guna2Button7.TabIndex = 13;
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             this.guna2Button7.MouseHover += new System.EventHandler(this.laeve_doc_gia);
             // 
             // label5
@@ -449,6 +455,21 @@
             this.guna2PictureBox1.TabIndex = 19;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 0;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 0;
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 0;
+            this.guna2Elipse3.TargetControl = this;
+            // 
             // uC_dang_nhap_thu_thu1
             // 
             this.uC_dang_nhap_thu_thu1.Location = new System.Drawing.Point(0, 0);
@@ -469,21 +490,6 @@
             this.uC_Quan_li_dang_nhap1.Name = "uC_Quan_li_dang_nhap1";
             this.uC_Quan_li_dang_nhap1.Size = new System.Drawing.Size(620, 620);
             this.uC_Quan_li_dang_nhap1.TabIndex = 22;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 0;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 0;
-            this.guna2Elipse2.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 0;
-            this.guna2Elipse3.TargetControl = this;
             // 
             // Form1
             // 

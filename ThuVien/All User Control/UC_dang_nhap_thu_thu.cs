@@ -22,5 +22,14 @@ namespace ThuVien.All_User_Control
             this.Visible = false;
 
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            if(guna2TextBox2.Text == "123")
+            {
+                DB_thu_thu db = new DB_thu_thu();
+                db.Show();
+            }
+        }
     }
 }

@@ -16,5 +16,15 @@ namespace ThuVien
         {
             InitializeComponent();
         }
+
+        private void DB_thu_thu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

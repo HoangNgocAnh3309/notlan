@@ -197,6 +197,7 @@
             this.guna2Button8.TabIndex = 10;
             this.guna2Button8.Text = "Đăng xuất";
             this.guna2Button8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
             // guna2Panel2
             // 
@@ -290,6 +291,7 @@
             this.Name = "DB_thu_thu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DB_thu_thu";
+            this.Load += new System.EventHandler(this.DB_thu_thu_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);

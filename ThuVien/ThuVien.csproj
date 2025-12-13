@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.1.0\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -52,6 +55,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="All User Control\UC_CaiDat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_CaiDat.Designer.cs">
+      <DependentUpon>UC_CaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_KhoSach_FormQuanLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_KhoSach_FormQuanLy.Designer.cs">
+      <DependentUpon>UC_KhoSach_FormQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_NhanSu_FormQuanLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_NhanSu_FormQuanLy.Designer.cs">
+      <DependentUpon>UC_NhanSu_FormQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_QuanLyMuonTra_FormQuanLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_QuanLyMuonTra_FormQuanLy.Designer.cs">
+      <DependentUpon>UC_QuanLyMuonTra_FormQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All User Control\UC_TongQuanQuanLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_TongQuanQuanLy.Designer.cs">
+      <DependentUpon>UC_TongQuanQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_dang_nhap_thu_thu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,6 +115,12 @@
     <Compile Include="All User Control\UC_them_sach.Designer.cs">
       <DependentUpon>UC_them_sach.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_TroLyAI_FormQuanLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_TroLyAI_FormQuanLy.Designer.cs">
+      <DependentUpon>UC_TroLyAI_FormQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB_doc_gia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +147,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="All User Control\UC_CaiDat.resx">
+      <DependentUpon>UC_CaiDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_KhoSach_FormQuanLy.resx">
+      <DependentUpon>UC_KhoSach_FormQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_NhanSu_FormQuanLy.resx">
+      <DependentUpon>UC_NhanSu_FormQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_QuanLyMuonTra_FormQuanLy.resx">
+      <DependentUpon>UC_QuanLyMuonTra_FormQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_TongQuanQuanLy.resx">
+      <DependentUpon>UC_TongQuanQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_dang_nhap_thu_thu.resx">
       <DependentUpon>UC_dang_nhap_thu_thu.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_them_sach.resx">
       <DependentUpon>UC_them_sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_TroLyAI_FormQuanLy.resx">
+      <DependentUpon>UC_TroLyAI_FormQuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DB_doc_gia.resx">
       <DependentUpon>DB_doc_gia.cs</DependentUpon>

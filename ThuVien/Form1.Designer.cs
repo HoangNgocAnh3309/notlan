@@ -53,12 +53,12 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_dang_nhap_thu_thu1 = new ThuVien.All_User_Control.UC_dang_nhap_thu_thu();
             this.uC_doc_gia_dang_nhap1 = new ThuVien.All_User_Control.UC_doc_gia_dang_nhap();
             this.uC_Quan_li_dang_nhap1 = new ThuVien.All_User_Control.UC_Quan_li_dang_nhap();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -255,6 +255,7 @@
             // 
             this.guna2Button9.BackColor = System.Drawing.Color.White;
             this.guna2Button9.BorderRadius = 8;
+            this.guna2Button9.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -276,6 +277,7 @@
             // 
             this.guna2Button8.BackColor = System.Drawing.Color.White;
             this.guna2Button8.BorderRadius = 8;
+            this.guna2Button8.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -297,6 +299,7 @@
             // 
             this.guna2Button7.BackColor = System.Drawing.Color.White;
             this.guna2Button7.BorderRadius = 8;
+            this.guna2Button7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -313,7 +316,6 @@
             this.guna2Button7.Size = new System.Drawing.Size(45, 45);
             this.guna2Button7.TabIndex = 13;
             this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
-            this.guna2Button7.MouseHover += new System.EventHandler(this.laeve_doc_gia);
             // 
             // label5
             // 
@@ -329,10 +331,11 @@
             // guna2Button6
             // 
             this.guna2Button6.BackColor = System.Drawing.Color.White;
-            this.guna2Button6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.guna2Button6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.guna2Button6.BorderRadius = 10;
             this.guna2Button6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2Button6.BorderThickness = 1;
+            this.guna2Button6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -342,6 +345,8 @@
             this.guna2Button6.ForeColor = System.Drawing.Color.Black;
             this.guna2Button6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.guna2Button6.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button6.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.guna2Button6.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
             this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button6.Location = new System.Drawing.Point(115, 410);
             this.guna2Button6.Name = "guna2Button6";
@@ -355,10 +360,11 @@
             // guna2Button5
             // 
             this.guna2Button5.BackColor = System.Drawing.Color.White;
-            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.guna2Button5.BorderRadius = 10;
             this.guna2Button5.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2Button5.BorderThickness = 1;
+            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -368,6 +374,8 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.Black;
             this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.guna2Button5.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.guna2Button5.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button5.Location = new System.Drawing.Point(115, 320);
             this.guna2Button5.Name = "guna2Button5";
@@ -381,10 +389,11 @@
             // guna2Button4
             // 
             this.guna2Button4.BackColor = System.Drawing.Color.White;
-            this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
+            this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(232)))), ((int)(((byte)(240)))));
             this.guna2Button4.BorderRadius = 10;
             this.guna2Button4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.guna2Button4.BorderThickness = 1;
+            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.guna2Button4.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(105)))), ((int)(((byte)(165)))));
             this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -395,6 +404,8 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.Black;
             this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.guna2Button4.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
+            this.guna2Button4.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button4.Location = new System.Drawing.Point(115, 230);
             this.guna2Button4.Name = "guna2Button4";
@@ -440,7 +451,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(304, 510);
+            this.label6.Location = new System.Drawing.Point(303, 510);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 13);
             this.label6.TabIndex = 11;
@@ -454,21 +465,7 @@
             this.guna2PictureBox1.Size = new System.Drawing.Size(620, 620);
             this.guna2PictureBox1.TabIndex = 19;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 0;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 0;
-            this.guna2Elipse2.TargetControl = this;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 0;
-            this.guna2Elipse3.TargetControl = this;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // uC_dang_nhap_thu_thu1
             // 
@@ -490,6 +487,21 @@
             this.uC_Quan_li_dang_nhap1.Name = "uC_Quan_li_dang_nhap1";
             this.uC_Quan_li_dang_nhap1.Size = new System.Drawing.Size(620, 620);
             this.uC_Quan_li_dang_nhap1.TabIndex = 22;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 0;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 0;
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 0;
+            this.guna2Elipse3.TargetControl = this;
             // 
             // Form1
             // 

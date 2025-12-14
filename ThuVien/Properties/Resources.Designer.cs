@@ -113,6 +113,16 @@ namespace ThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shield__1_ {
+            get {
+                object obj = ResourceManager.GetObject("shield__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shield_check {
             get {
                 object obj = ResourceManager.GetObject("shield_check", resourceCulture);
@@ -136,6 +146,16 @@ namespace ThuVien.Properties {
         internal static System.Drawing.Bitmap shield_check__2_ {
             get {
                 object obj = ResourceManager.GetObject("shield_check__2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shield_check_white {
+            get {
+                object obj = ResourceManager.GetObject("shield_check_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DB_quan_li));
             this.pnlContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.uC_TongQuanQuanLy1 = new ThuVien.All_User_Control.UC_TongQuanQuanLy();
+            this.uC_KhoSach_FormQuanLy1 = new ThuVien.All_User_Control.UC_KhoSach_FormQuanLy();
+            this.uC_TroLyAI_FormQuanLy1 = new ThuVien.All_User_Control.UC_TroLyAI_FormQuanLy();
+            this.uC_QuanLyMuonTra_FormQuanLy1 = new ThuVien.All_User_Control.UC_QuanLyMuonTra_FormQuanLy();
+            this.uC_NhanSu_FormQuanLy1 = new ThuVien.All_User_Control.UC_NhanSu_FormQuanLy();
+            this.uC_CaiDat1 = new ThuVien.All_User_Control.UC_CaiDat();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -52,18 +58,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.uC_TongQuanQuanLy2 = new ThuVien.All_User_Control.UC_TongQuanQuanLy();
             this.uC_CaiDat2 = new ThuVien.All_User_Control.UC_CaiDat();
             this.uC_TroLyAI_FormQuanLy2 = new ThuVien.All_User_Control.UC_TroLyAI_FormQuanLy();
             this.uC_QuanLyMuonTra_FormQuanLy2 = new ThuVien.All_User_Control.UC_QuanLyMuonTra_FormQuanLy();
             this.uC_NhanSu_FormQuanLy2 = new ThuVien.All_User_Control.UC_NhanSu_FormQuanLy();
             this.uC_KhoSach_FormQuanLy2 = new ThuVien.All_User_Control.UC_KhoSach_FormQuanLy();
-            this.uC_TongQuanQuanLy1 = new ThuVien.All_User_Control.UC_TongQuanQuanLy();
-            this.uC_KhoSach_FormQuanLy1 = new ThuVien.All_User_Control.UC_KhoSach_FormQuanLy();
-            this.uC_TroLyAI_FormQuanLy1 = new ThuVien.All_User_Control.UC_TroLyAI_FormQuanLy();
-            this.uC_QuanLyMuonTra_FormQuanLy1 = new ThuVien.All_User_Control.UC_QuanLyMuonTra_FormQuanLy();
-            this.uC_NhanSu_FormQuanLy1 = new ThuVien.All_User_Control.UC_NhanSu_FormQuanLy();
-            this.uC_CaiDat1 = new ThuVien.All_User_Control.UC_CaiDat();
             this.pnlContainer.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -71,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlContainer
@@ -86,6 +88,57 @@
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1015, 620);
             this.pnlContainer.TabIndex = 1;
+            // 
+            // uC_TongQuanQuanLy1
+            // 
+            this.uC_TongQuanQuanLy1.AutoScroll = true;
+            this.uC_TongQuanQuanLy1.BackColor = System.Drawing.Color.White;
+            this.uC_TongQuanQuanLy1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.uC_TongQuanQuanLy1.Location = new System.Drawing.Point(0, 0);
+            this.uC_TongQuanQuanLy1.Name = "uC_TongQuanQuanLy1";
+            this.uC_TongQuanQuanLy1.Size = new System.Drawing.Size(1015, 620);
+            this.uC_TongQuanQuanLy1.TabIndex = 0;
+            // 
+            // uC_KhoSach_FormQuanLy1
+            // 
+            this.uC_KhoSach_FormQuanLy1.BackColor = System.Drawing.Color.White;
+            this.uC_KhoSach_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
+            this.uC_KhoSach_FormQuanLy1.Name = "uC_KhoSach_FormQuanLy1";
+            this.uC_KhoSach_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
+            this.uC_KhoSach_FormQuanLy1.TabIndex = 1;
+            // 
+            // uC_TroLyAI_FormQuanLy1
+            // 
+            this.uC_TroLyAI_FormQuanLy1.BackColor = System.Drawing.Color.White;
+            this.uC_TroLyAI_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
+            this.uC_TroLyAI_FormQuanLy1.Name = "uC_TroLyAI_FormQuanLy1";
+            this.uC_TroLyAI_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
+            this.uC_TroLyAI_FormQuanLy1.TabIndex = 2;
+            // 
+            // uC_QuanLyMuonTra_FormQuanLy1
+            // 
+            this.uC_QuanLyMuonTra_FormQuanLy1.BackColor = System.Drawing.Color.White;
+            this.uC_QuanLyMuonTra_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
+            this.uC_QuanLyMuonTra_FormQuanLy1.Name = "uC_QuanLyMuonTra_FormQuanLy1";
+            this.uC_QuanLyMuonTra_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
+            this.uC_QuanLyMuonTra_FormQuanLy1.TabIndex = 5;
+            // 
+            // uC_NhanSu_FormQuanLy1
+            // 
+            this.uC_NhanSu_FormQuanLy1.BackColor = System.Drawing.Color.White;
+            this.uC_NhanSu_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
+            this.uC_NhanSu_FormQuanLy1.Name = "uC_NhanSu_FormQuanLy1";
+            this.uC_NhanSu_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
+            this.uC_NhanSu_FormQuanLy1.TabIndex = 4;
+            // 
+            // uC_CaiDat1
+            // 
+            this.uC_CaiDat1.AutoScroll = true;
+            this.uC_CaiDat1.BackColor = System.Drawing.Color.White;
+            this.uC_CaiDat1.Location = new System.Drawing.Point(0, 0);
+            this.uC_CaiDat1.Name = "uC_CaiDat1";
+            this.uC_CaiDat1.Size = new System.Drawing.Size(1015, 620);
+            this.uC_CaiDat1.TabIndex = 6;
             // 
             // guna2Elipse1
             // 
@@ -367,117 +420,75 @@
             this.guna2Button1.Text = "Trương Hoàng Anh";
             this.guna2Button1.TextOffset = new System.Drawing.Point(10, -10);
             // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.AutoScroll = true;
+            this.guna2Panel5.Controls.Add(this.uC_TongQuanQuanLy2);
+            this.guna2Panel5.Controls.Add(this.uC_KhoSach_FormQuanLy2);
+            this.guna2Panel5.Controls.Add(this.uC_NhanSu_FormQuanLy2);
+            this.guna2Panel5.Controls.Add(this.uC_QuanLyMuonTra_FormQuanLy2);
+            this.guna2Panel5.Controls.Add(this.uC_TroLyAI_FormQuanLy2);
+            this.guna2Panel5.Controls.Add(this.uC_CaiDat2);
+            this.guna2Panel5.Location = new System.Drawing.Point(225, 0);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(1015, 620);
+            this.guna2Panel5.TabIndex = 9;
+            // 
             // uC_TongQuanQuanLy2
             // 
             this.uC_TongQuanQuanLy2.AutoScroll = true;
             this.uC_TongQuanQuanLy2.BackColor = System.Drawing.Color.White;
-            this.uC_TongQuanQuanLy2.Location = new System.Drawing.Point(225, 0);
+            this.uC_TongQuanQuanLy2.Location = new System.Drawing.Point(0, 0);
             this.uC_TongQuanQuanLy2.Name = "uC_TongQuanQuanLy2";
             this.uC_TongQuanQuanLy2.Size = new System.Drawing.Size(1015, 938);
-            this.uC_TongQuanQuanLy2.TabIndex = 3;
+            this.uC_TongQuanQuanLy2.TabIndex = 4;
             // 
             // uC_CaiDat2
             // 
             this.uC_CaiDat2.AutoScroll = true;
             this.uC_CaiDat2.BackColor = System.Drawing.Color.White;
-            this.uC_CaiDat2.Location = new System.Drawing.Point(225, 0);
+            this.uC_CaiDat2.Location = new System.Drawing.Point(0, 0);
             this.uC_CaiDat2.Name = "uC_CaiDat2";
             this.uC_CaiDat2.Size = new System.Drawing.Size(1015, 991);
-            this.uC_CaiDat2.TabIndex = 8;
+            this.uC_CaiDat2.TabIndex = 9;
             // 
             // uC_TroLyAI_FormQuanLy2
             // 
             this.uC_TroLyAI_FormQuanLy2.BackColor = System.Drawing.Color.White;
-            this.uC_TroLyAI_FormQuanLy2.Location = new System.Drawing.Point(225, 0);
+            this.uC_TroLyAI_FormQuanLy2.Location = new System.Drawing.Point(0, 0);
             this.uC_TroLyAI_FormQuanLy2.Name = "uC_TroLyAI_FormQuanLy2";
             this.uC_TroLyAI_FormQuanLy2.Size = new System.Drawing.Size(1015, 620);
-            this.uC_TroLyAI_FormQuanLy2.TabIndex = 7;
+            this.uC_TroLyAI_FormQuanLy2.TabIndex = 10;
             // 
             // uC_QuanLyMuonTra_FormQuanLy2
             // 
             this.uC_QuanLyMuonTra_FormQuanLy2.BackColor = System.Drawing.Color.White;
-            this.uC_QuanLyMuonTra_FormQuanLy2.Location = new System.Drawing.Point(225, 0);
+            this.uC_QuanLyMuonTra_FormQuanLy2.Location = new System.Drawing.Point(0, 0);
             this.uC_QuanLyMuonTra_FormQuanLy2.Name = "uC_QuanLyMuonTra_FormQuanLy2";
             this.uC_QuanLyMuonTra_FormQuanLy2.Size = new System.Drawing.Size(1015, 620);
-            this.uC_QuanLyMuonTra_FormQuanLy2.TabIndex = 6;
+            this.uC_QuanLyMuonTra_FormQuanLy2.TabIndex = 11;
             // 
             // uC_NhanSu_FormQuanLy2
             // 
             this.uC_NhanSu_FormQuanLy2.BackColor = System.Drawing.Color.White;
-            this.uC_NhanSu_FormQuanLy2.Location = new System.Drawing.Point(225, 0);
+            this.uC_NhanSu_FormQuanLy2.Location = new System.Drawing.Point(0, 0);
             this.uC_NhanSu_FormQuanLy2.Name = "uC_NhanSu_FormQuanLy2";
             this.uC_NhanSu_FormQuanLy2.Size = new System.Drawing.Size(1015, 620);
-            this.uC_NhanSu_FormQuanLy2.TabIndex = 5;
+            this.uC_NhanSu_FormQuanLy2.TabIndex = 12;
             // 
             // uC_KhoSach_FormQuanLy2
             // 
             this.uC_KhoSach_FormQuanLy2.BackColor = System.Drawing.Color.White;
-            this.uC_KhoSach_FormQuanLy2.Location = new System.Drawing.Point(225, 0);
+            this.uC_KhoSach_FormQuanLy2.Location = new System.Drawing.Point(0, 0);
             this.uC_KhoSach_FormQuanLy2.Name = "uC_KhoSach_FormQuanLy2";
             this.uC_KhoSach_FormQuanLy2.Size = new System.Drawing.Size(1015, 620);
-            this.uC_KhoSach_FormQuanLy2.TabIndex = 4;
-            // 
-            // uC_TongQuanQuanLy1
-            // 
-            this.uC_TongQuanQuanLy1.AutoScroll = true;
-            this.uC_TongQuanQuanLy1.BackColor = System.Drawing.Color.White;
-            this.uC_TongQuanQuanLy1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.uC_TongQuanQuanLy1.Location = new System.Drawing.Point(0, 0);
-            this.uC_TongQuanQuanLy1.Name = "uC_TongQuanQuanLy1";
-            this.uC_TongQuanQuanLy1.Size = new System.Drawing.Size(1015, 620);
-            this.uC_TongQuanQuanLy1.TabIndex = 0;
-            // 
-            // uC_KhoSach_FormQuanLy1
-            // 
-            this.uC_KhoSach_FormQuanLy1.BackColor = System.Drawing.Color.White;
-            this.uC_KhoSach_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
-            this.uC_KhoSach_FormQuanLy1.Name = "uC_KhoSach_FormQuanLy1";
-            this.uC_KhoSach_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
-            this.uC_KhoSach_FormQuanLy1.TabIndex = 1;
-            // 
-            // uC_TroLyAI_FormQuanLy1
-            // 
-            this.uC_TroLyAI_FormQuanLy1.BackColor = System.Drawing.Color.White;
-            this.uC_TroLyAI_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
-            this.uC_TroLyAI_FormQuanLy1.Name = "uC_TroLyAI_FormQuanLy1";
-            this.uC_TroLyAI_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
-            this.uC_TroLyAI_FormQuanLy1.TabIndex = 2;
-            // 
-            // uC_QuanLyMuonTra_FormQuanLy1
-            // 
-            this.uC_QuanLyMuonTra_FormQuanLy1.BackColor = System.Drawing.Color.White;
-            this.uC_QuanLyMuonTra_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
-            this.uC_QuanLyMuonTra_FormQuanLy1.Name = "uC_QuanLyMuonTra_FormQuanLy1";
-            this.uC_QuanLyMuonTra_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
-            this.uC_QuanLyMuonTra_FormQuanLy1.TabIndex = 5;
-            // 
-            // uC_NhanSu_FormQuanLy1
-            // 
-            this.uC_NhanSu_FormQuanLy1.BackColor = System.Drawing.Color.White;
-            this.uC_NhanSu_FormQuanLy1.Location = new System.Drawing.Point(0, 0);
-            this.uC_NhanSu_FormQuanLy1.Name = "uC_NhanSu_FormQuanLy1";
-            this.uC_NhanSu_FormQuanLy1.Size = new System.Drawing.Size(1015, 620);
-            this.uC_NhanSu_FormQuanLy1.TabIndex = 4;
-            // 
-            // uC_CaiDat1
-            // 
-            this.uC_CaiDat1.AutoScroll = true;
-            this.uC_CaiDat1.BackColor = System.Drawing.Color.White;
-            this.uC_CaiDat1.Location = new System.Drawing.Point(0, 0);
-            this.uC_CaiDat1.Name = "uC_CaiDat1";
-            this.uC_CaiDat1.Size = new System.Drawing.Size(1015, 620);
-            this.uC_CaiDat1.TabIndex = 6;
+            this.uC_KhoSach_FormQuanLy2.TabIndex = 13;
             // 
             // DB_quan_li
             // 
             this.ClientSize = new System.Drawing.Size(1240, 620);
-            this.Controls.Add(this.uC_TongQuanQuanLy2);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.uC_CaiDat2);
-            this.Controls.Add(this.uC_TroLyAI_FormQuanLy2);
-            this.Controls.Add(this.uC_QuanLyMuonTra_FormQuanLy2);
-            this.Controls.Add(this.uC_NhanSu_FormQuanLy2);
-            this.Controls.Add(this.uC_KhoSach_FormQuanLy2);
+            this.Controls.Add(this.guna2Panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DB_quan_li";
@@ -491,6 +502,7 @@
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.guna2Panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -524,11 +536,12 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private All_User_Control.UC_TongQuanQuanLy uC_TongQuanQuanLy2;
-        private All_User_Control.UC_TroLyAI_FormQuanLy uC_TroLyAI_FormQuanLy2;
-        private All_User_Control.UC_QuanLyMuonTra_FormQuanLy uC_QuanLyMuonTra_FormQuanLy2;
-        private All_User_Control.UC_NhanSu_FormQuanLy uC_NhanSu_FormQuanLy2;
         private All_User_Control.UC_KhoSach_FormQuanLy uC_KhoSach_FormQuanLy2;
+        private All_User_Control.UC_NhanSu_FormQuanLy uC_NhanSu_FormQuanLy2;
+        private All_User_Control.UC_QuanLyMuonTra_FormQuanLy uC_QuanLyMuonTra_FormQuanLy2;
+        private All_User_Control.UC_TroLyAI_FormQuanLy uC_TroLyAI_FormQuanLy2;
         private All_User_Control.UC_CaiDat uC_CaiDat2;
     }
 }

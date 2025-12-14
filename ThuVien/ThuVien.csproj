@@ -61,6 +61,12 @@
     <Compile Include="All User Control\UC_CaiDat.Designer.cs">
       <DependentUpon>UC_CaiDat.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_Gio_sach_DG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Gio_sach_DG.Designer.cs">
+      <DependentUpon>UC_Gio_sach_DG.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_KhoSach_FormQuanLy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -225,7 +231,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\shield-check_white.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Images\arrow-right %281%29.png" />
   </ItemGroup>
@@ -255,6 +263,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\shield %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

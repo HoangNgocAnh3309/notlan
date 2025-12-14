@@ -29,7 +29,10 @@ namespace ThuVien.All_User_Control
             {
                 DB_thu_thu db = new DB_thu_thu();
                 db.Show();
+           
             }
+            
         }
+        
     }
 }

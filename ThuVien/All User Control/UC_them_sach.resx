@@ -120,10 +120,13 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="guna2CircleButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAACBSURBVEhLY2AYBUMGpORPEE8p6T6TUtJ9AF2OYpBW0C+ZUtJ9J6Wk+39KSfdZdHmKANjlpV13
-        wYaD6PwJ4uhqyAajhmMFNDWcgeE/Y0pp11doaiEHn0I3EQ3Q3AKaBxEEjFpCEqCLJdDC7jY0pZxHl6cK
-        gFpyM6W45yS63CgY3AAAQZPMcLPIeLQAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAIFJREFUSEtj
+        YBgFQwak5E8QTynpPpNS0n0AXY5ikFbQL5lS0n0npaT7f0pJ91l0eYoA2OWlXXfBhoPo/Ani6GrIBqOG
+        YwU0NZyB4T9jSmnXV2hqIQefQjcRDdDcApoHEQSMWkISoIsl0MLuNjSlnEeXpwqAWnIzpbjnJLrcKBjc
+        AABBk8xws8h4tAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

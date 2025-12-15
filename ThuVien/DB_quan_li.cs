@@ -16,6 +16,8 @@ namespace ThuVien
         public DB_quan_li()
         {
             InitializeComponent();
+           
+
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
@@ -30,39 +32,101 @@ namespace ThuVien
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            uC_TongQuanQuanLy2.Visible = true;
-            uC_TongQuanQuanLy2.BringToFront();
+            var uc = guna2Panel5.Controls
+                      .OfType<UC_TongQuanQuanLy>()
+                      .FirstOrDefault();
+
+            if (uc == null)
+            {
+                uc = new UC_TongQuanQuanLy();
+                uc.Dock = DockStyle.Fill;
+                guna2Panel5.Controls.Add(uc);
+            }
+
+            uc.BringToFront();
         }
+
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            uC_KhoSach_FormQuanLy2.Visible=true;
-            uC_KhoSach_FormQuanLy2.BringToFront();
+            var uc = guna2Panel5.Controls
+                      .OfType<UC_KhoSach_FormQuanLy>()
+                      .FirstOrDefault();
+
+            if (uc == null)
+            {
+                uc = new UC_KhoSach_FormQuanLy();
+                uc.Dock = DockStyle.Fill;
+                guna2Panel5.Controls.Add(uc);
+            }
+
+            uc.BringToFront();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            uC_TroLyAI_FormQuanLy2.Visible=true;
-            uC_TroLyAI_FormQuanLy2.BringToFront();
+            var uc = guna2Panel5.Controls
+                      .OfType<UC_TroLyAI_FormQuanLy>()
+                      .FirstOrDefault();
+
+            if (uc == null)
+            {
+                uc = new UC_TroLyAI_FormQuanLy();
+                uc.Dock = DockStyle.Fill;
+                guna2Panel5.Controls.Add(uc);
+            }
+
+            uc.BringToFront();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            uC_QuanLyMuonTra_FormQuanLy2.Visible=true;
-            uC_QuanLyMuonTra_FormQuanLy2.BringToFront();
+            var uc = guna2Panel5.Controls
+                      .OfType<UC_QuanLyMuonTra_FormQuanLy>()
+                      .FirstOrDefault();
+
+            if (uc == null)
+            {
+                uc = new UC_QuanLyMuonTra_FormQuanLy();
+                uc.Dock = DockStyle.Fill;
+                guna2Panel5.Controls.Add(uc);
+            }
+
+            uc.BringToFront();
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-            uC_NhanSu_FormQuanLy2.Visible=true;
-            uC_NhanSu_FormQuanLy2.BringToFront();
+            var uc = guna2Panel5.Controls
+                      .OfType<UC_NhanSu_FormQuanLy>()
+                      .FirstOrDefault();
+
+            if (uc == null)
+            {
+                uc = new UC_NhanSu_FormQuanLy();
+                uc.Dock = DockStyle.Fill;
+                guna2Panel5.Controls.Add(uc);
+            }
+
+            uc.BringToFront();
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            uC_CaiDat2.Visible = true;
-            uC_CaiDat2.BringToFront();
+            var uc = guna2Panel5.Controls
+                      .OfType<UC_CaiDat>()
+                      .FirstOrDefault();
+
+            if (uc == null)
+            {
+                uc = new UC_CaiDat();
+                uc.Dock = DockStyle.Fill;
+                guna2Panel5.Controls.Add(uc);
+            }
+
+            uc.BringToFront();
         }
+
 
         private void guna2Button8_Click_1(object sender, EventArgs e)
         {

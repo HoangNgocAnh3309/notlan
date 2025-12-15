@@ -21,5 +21,15 @@ namespace ThuVien.All_User_Control
         {
             this.BackColor = Color.Black;
         }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

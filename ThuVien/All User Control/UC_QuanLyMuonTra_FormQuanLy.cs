@@ -21,5 +21,10 @@ namespace ThuVien.All_User_Control
         {
             btnTatCa.Checked = true;
         }
+
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

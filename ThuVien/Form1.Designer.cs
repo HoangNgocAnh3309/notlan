@@ -53,9 +53,6 @@
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.uC_dang_nhap_thu_thu1 = new ThuVien.All_User_Control.UC_dang_nhap_thu_thu();
-            this.uC_doc_gia_dang_nhap1 = new ThuVien.All_User_Control.UC_doc_gia_dang_nhap();
-            this.uC_Quan_li_dang_nhap1 = new ThuVien.All_User_Control.UC_Quan_li_dang_nhap();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -205,9 +202,6 @@
             this.guna2Panel2.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2Panel2.Controls.Add(this.label6);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel2.Controls.Add(this.uC_dang_nhap_thu_thu1);
-            this.guna2Panel2.Controls.Add(this.uC_doc_gia_dang_nhap1);
-            this.guna2Panel2.Controls.Add(this.uC_Quan_li_dang_nhap1);
             this.guna2Panel2.FillColor = System.Drawing.Color.White;
             this.guna2Panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(87)))), ((int)(((byte)(230)))));
             this.guna2Panel2.Location = new System.Drawing.Point(620, 0);
@@ -460,33 +454,12 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(6, 79);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(620, 620);
             this.guna2PictureBox1.TabIndex = 19;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // uC_dang_nhap_thu_thu1
-            // 
-            this.uC_dang_nhap_thu_thu1.Location = new System.Drawing.Point(0, 0);
-            this.uC_dang_nhap_thu_thu1.Name = "uC_dang_nhap_thu_thu1";
-            this.uC_dang_nhap_thu_thu1.Size = new System.Drawing.Size(620, 620);
-            this.uC_dang_nhap_thu_thu1.TabIndex = 20;
-            // 
-            // uC_doc_gia_dang_nhap1
-            // 
-            this.uC_doc_gia_dang_nhap1.Location = new System.Drawing.Point(0, 0);
-            this.uC_doc_gia_dang_nhap1.Name = "uC_doc_gia_dang_nhap1";
-            this.uC_doc_gia_dang_nhap1.Size = new System.Drawing.Size(620, 620);
-            this.uC_doc_gia_dang_nhap1.TabIndex = 21;
-            // 
-            // uC_Quan_li_dang_nhap1
-            // 
-            this.uC_Quan_li_dang_nhap1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Quan_li_dang_nhap1.Name = "uC_Quan_li_dang_nhap1";
-            this.uC_Quan_li_dang_nhap1.Size = new System.Drawing.Size(620, 620);
-            this.uC_Quan_li_dang_nhap1.TabIndex = 22;
             // 
             // guna2Elipse1
             // 
@@ -547,11 +520,8 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private All_User_Control.UC_dang_nhap_thu_thu uC_dang_nhap_thu_thu1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
-        private All_User_Control.UC_doc_gia_dang_nhap uC_doc_gia_dang_nhap1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
-        private All_User_Control.UC_Quan_li_dang_nhap uC_Quan_li_dang_nhap1;
     }
 }
 

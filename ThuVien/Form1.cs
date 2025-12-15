@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ThuVien.All_User_Control;
 
 namespace ThuVien
 {
@@ -208,8 +209,9 @@ namespace ThuVien
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            uC_dang_nhap_thu_thu1.Visible = true;
-            uC_dang_nhap_thu_thu1.BringToFront();
+            UC_dang_nhap_thu_thu dang_Nhap_Thu_Thu = new UC_dang_nhap_thu_thu();
+            guna2Panel2.Controls.Add(dang_Nhap_Thu_Thu);
+            dang_Nhap_Thu_Thu.BringToFront();
         }
 
         private void uC_dang_nhap_thu_thu1_Load(object sender, EventArgs e)
@@ -219,14 +221,18 @@ namespace ThuVien
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            uC_doc_gia_dang_nhap1.Visible = true;
-            uC_doc_gia_dang_nhap1.BringToFront();
+            UC_doc_gia_dang_nhap doc_Gia_Dang_Nhap = new UC_doc_gia_dang_nhap();
+            guna2Panel2.Controls.Add(doc_Gia_Dang_Nhap);
+            doc_Gia_Dang_Nhap.BringToFront();
+
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            uC_Quan_li_dang_nhap1.Visible=true;
-            uC_Quan_li_dang_nhap1.BringToFront();
+            UC_Quan_li_dang_nhap quan_Li_Dang_Nhap = new UC_Quan_li_dang_nhap();
+            guna2Panel2.Controls.Add(quan_Li_Dang_Nhap);
+            quan_Li_Dang_Nhap.BringToFront();
+
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
@@ -236,38 +242,44 @@ namespace ThuVien
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-            uC_doc_gia_dang_nhap1.Visible = true;
-            uC_doc_gia_dang_nhap1.BringToFront();
+            UC_doc_gia_dang_nhap doc_Gia_Dang_Nhap = new UC_doc_gia_dang_nhap();
+            guna2Panel2.Controls.Add(doc_Gia_Dang_Nhap);
+            doc_Gia_Dang_Nhap.BringToFront();
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-            uC_doc_gia_dang_nhap1.Visible = true;
-            uC_doc_gia_dang_nhap1.BringToFront();
+            UC_doc_gia_dang_nhap doc_Gia_Dang_Nhap = new UC_doc_gia_dang_nhap();
+            guna2Panel2.Controls.Add(doc_Gia_Dang_Nhap);
+            doc_Gia_Dang_Nhap.BringToFront();
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
         {
-            uC_dang_nhap_thu_thu1.Visible = true;
-            uC_dang_nhap_thu_thu1.BringToFront();
+            UC_dang_nhap_thu_thu dang_Nhap_Thu_Thu = new UC_dang_nhap_thu_thu();
+            guna2Panel2.Controls.Add(dang_Nhap_Thu_Thu);
+            dang_Nhap_Thu_Thu.BringToFront();
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
-            uC_dang_nhap_thu_thu1.Visible = true;
-            uC_dang_nhap_thu_thu1.BringToFront();
+            UC_dang_nhap_thu_thu dang_Nhap_Thu_Thu = new UC_dang_nhap_thu_thu();
+            guna2Panel2.Controls.Add(dang_Nhap_Thu_Thu);
+            dang_Nhap_Thu_Thu.BringToFront();
         }
 
         private void guna2Button9_Click(object sender, EventArgs e)
         {
-            uC_Quan_li_dang_nhap1.Visible = true;
-            uC_Quan_li_dang_nhap1.BringToFront();
+            UC_Quan_li_dang_nhap quan_Li_Dang_Nhap = new UC_Quan_li_dang_nhap();
+            guna2Panel2.Controls.Add(quan_Li_Dang_Nhap);
+            quan_Li_Dang_Nhap.BringToFront();
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
-            uC_Quan_li_dang_nhap1.Visible = true;
-            uC_Quan_li_dang_nhap1.BringToFront();
+            UC_Quan_li_dang_nhap quan_Li_Dang_Nhap = new UC_Quan_li_dang_nhap();
+            guna2Panel2.Controls.Add(quan_Li_Dang_Nhap);
+            quan_Li_Dang_Nhap.BringToFront();
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)

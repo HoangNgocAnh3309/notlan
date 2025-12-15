@@ -34,11 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnTatCa = new Guna.UI2.WinForms.Guna2Button();
-            this.btnChoDuyet = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDangMuon = new Guna.UI2.WinForms.Guna2Button();
             this.btnLichSu = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDangMuon = new Guna.UI2.WinForms.Guna2Button();
+            this.btnChoDuyet = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTatCa = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +83,83 @@
             this.guna2Panel1.Size = new System.Drawing.Size(953, 62);
             this.guna2Panel1.TabIndex = 4;
             // 
+            // btnLichSu
+            // 
+            this.btnLichSu.BorderRadius = 10;
+            this.btnLichSu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnLichSu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.btnLichSu.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.btnLichSu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLichSu.FillColor = System.Drawing.Color.White;
+            this.btnLichSu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLichSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.btnLichSu.Location = new System.Drawing.Point(281, 14);
+            this.btnLichSu.Name = "btnLichSu";
+            this.btnLichSu.Size = new System.Drawing.Size(72, 34);
+            this.btnLichSu.TabIndex = 8;
+            this.btnLichSu.Text = "Lịch sử";
+            this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
+            // 
+            // btnDangMuon
+            // 
+            this.btnDangMuon.BorderRadius = 10;
+            this.btnDangMuon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnDangMuon.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.btnDangMuon.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.btnDangMuon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangMuon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDangMuon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDangMuon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDangMuon.FillColor = System.Drawing.Color.White;
+            this.btnDangMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDangMuon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.btnDangMuon.Location = new System.Drawing.Point(181, 14);
+            this.btnDangMuon.Name = "btnDangMuon";
+            this.btnDangMuon.Size = new System.Drawing.Size(94, 34);
+            this.btnDangMuon.TabIndex = 7;
+            this.btnDangMuon.Text = "Đang mượn";
+            // 
+            // btnChoDuyet
+            // 
+            this.btnChoDuyet.BorderRadius = 10;
+            this.btnChoDuyet.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnChoDuyet.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.btnChoDuyet.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.btnChoDuyet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChoDuyet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChoDuyet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChoDuyet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChoDuyet.FillColor = System.Drawing.Color.White;
+            this.btnChoDuyet.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnChoDuyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.btnChoDuyet.Location = new System.Drawing.Point(93, 14);
+            this.btnChoDuyet.Name = "btnChoDuyet";
+            this.btnChoDuyet.Size = new System.Drawing.Size(82, 34);
+            this.btnChoDuyet.TabIndex = 6;
+            this.btnChoDuyet.Text = "Chờ duyệt";
+            // 
+            // btnTatCa
+            // 
+            this.btnTatCa.BorderRadius = 10;
+            this.btnTatCa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnTatCa.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.btnTatCa.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
+            this.btnTatCa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTatCa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTatCa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTatCa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTatCa.FillColor = System.Drawing.Color.White;
+            this.btnTatCa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTatCa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
+            this.btnTatCa.Location = new System.Drawing.Point(15, 14);
+            this.btnTatCa.Name = "btnTatCa";
+            this.btnTatCa.Size = new System.Drawing.Size(72, 34);
+            this.btnTatCa.TabIndex = 5;
+            this.btnTatCa.Text = "Tất cả";
+            // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.BorderRadius = 10;
@@ -105,82 +182,6 @@
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(232, 34);
             this.guna2TextBox1.TabIndex = 4;
-            // 
-            // btnTatCa
-            // 
-            this.btnTatCa.BorderRadius = 10;
-            this.btnTatCa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnTatCa.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnTatCa.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnTatCa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTatCa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTatCa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTatCa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTatCa.FillColor = System.Drawing.Color.White;
-            this.btnTatCa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTatCa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnTatCa.Location = new System.Drawing.Point(15, 14);
-            this.btnTatCa.Name = "btnTatCa";
-            this.btnTatCa.Size = new System.Drawing.Size(72, 34);
-            this.btnTatCa.TabIndex = 5;
-            this.btnTatCa.Text = "Tất cả";
-            // 
-            // btnChoDuyet
-            // 
-            this.btnChoDuyet.BorderRadius = 10;
-            this.btnChoDuyet.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnChoDuyet.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnChoDuyet.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnChoDuyet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnChoDuyet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnChoDuyet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnChoDuyet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChoDuyet.FillColor = System.Drawing.Color.White;
-            this.btnChoDuyet.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChoDuyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnChoDuyet.Location = new System.Drawing.Point(93, 14);
-            this.btnChoDuyet.Name = "btnChoDuyet";
-            this.btnChoDuyet.Size = new System.Drawing.Size(82, 34);
-            this.btnChoDuyet.TabIndex = 6;
-            this.btnChoDuyet.Text = "Chờ duyệt";
-            // 
-            // btnDangMuon
-            // 
-            this.btnDangMuon.BorderRadius = 10;
-            this.btnDangMuon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnDangMuon.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnDangMuon.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnDangMuon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangMuon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangMuon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDangMuon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDangMuon.FillColor = System.Drawing.Color.White;
-            this.btnDangMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDangMuon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnDangMuon.Location = new System.Drawing.Point(181, 14);
-            this.btnDangMuon.Name = "btnDangMuon";
-            this.btnDangMuon.Size = new System.Drawing.Size(94, 34);
-            this.btnDangMuon.TabIndex = 7;
-            this.btnDangMuon.Text = "Đang mượn";
-            // 
-            // btnLichSu
-            // 
-            this.btnLichSu.BorderRadius = 10;
-            this.btnLichSu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnLichSu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnLichSu.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnLichSu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLichSu.FillColor = System.Drawing.Color.White;
-            this.btnLichSu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLichSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnLichSu.Location = new System.Drawing.Point(281, 14);
-            this.btnLichSu.Name = "btnLichSu";
-            this.btnLichSu.Size = new System.Drawing.Size(72, 34);
-            this.btnLichSu.TabIndex = 8;
-            this.btnLichSu.Text = "Lịch sử";
             // 
             // guna2Panel2
             // 

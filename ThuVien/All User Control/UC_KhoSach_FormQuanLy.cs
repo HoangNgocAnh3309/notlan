@@ -21,5 +21,28 @@ namespace ThuVien.All_User_Control
         {
 
         }
+
+        private void btnThemSach_Click(object sender, EventArgs e)
+        {
+           
+        
+        }
+
+        private void btnThemSach_Click_1(object sender, EventArgs e)
+        {
+            var uc = guna2Panel3.Controls
+                .OfType<UC_them_sach>()
+                .FirstOrDefault();
+
+            if (uc == null)
+            {
+                uc = new UC_them_sach();
+                uc.Dock = DockStyle.Fill;
+                guna2Panel3.Controls.Add(uc);
+            }
+            uc.Show();
+            uc.BringToFront();
+        }
+
     }
 }

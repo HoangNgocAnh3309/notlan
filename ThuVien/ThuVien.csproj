@@ -1,271 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C18BED14-8F63-40F0-8423-1F929E0C498F}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>ThuVien</RootNamespace>
-    <AssemblyName>ThuVien</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Guna.Charts.WinForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.Charts.WinForms.1.1.0\lib\net472\Guna.Charts.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Design" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="All User Control\UC_CaiDat.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_CaiDat.Designer.cs">
-      <DependentUpon>UC_CaiDat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_Gio_sach_DG.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_Gio_sach_DG.Designer.cs">
-      <DependentUpon>UC_Gio_sach_DG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_KhoSach_FormQuanLy.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_KhoSach_FormQuanLy.Designer.cs">
-      <DependentUpon>UC_KhoSach_FormQuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_NhanSu_FormQuanLy.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_NhanSu_FormQuanLy.Designer.cs">
-      <DependentUpon>UC_NhanSu_FormQuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_QuanLyMuonTra_FormQuanLy.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_QuanLyMuonTra_FormQuanLy.Designer.cs">
-      <DependentUpon>UC_QuanLyMuonTra_FormQuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_TongQuanQuanLy.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_TongQuanQuanLy.Designer.cs">
-      <DependentUpon>UC_TongQuanQuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_dang_nhap_thu_thu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_dang_nhap_thu_thu.Designer.cs">
-      <DependentUpon>UC_dang_nhap_thu_thu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_doc_gia_dang_nhap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_doc_gia_dang_nhap.Designer.cs">
-      <DependentUpon>UC_doc_gia_dang_nhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_Kham_pha_DG.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_Kham_pha_DG.Designer.cs">
-      <DependentUpon>UC_Kham_pha_DG.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_Kho_sach.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_Kho_sach.Designer.cs">
-      <DependentUpon>UC_Kho_sach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_Quan_li_dang_nhap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_Quan_li_dang_nhap.Designer.cs">
-      <DependentUpon>UC_Quan_li_dang_nhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_them_sach.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_them_sach.Designer.cs">
-      <DependentUpon>UC_them_sach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="All User Control\UC_TroLyAI_FormQuanLy.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="All User Control\UC_TroLyAI_FormQuanLy.Designer.cs">
-      <DependentUpon>UC_TroLyAI_FormQuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DB_doc_gia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DB_doc_gia.Designer.cs">
-      <DependentUpon>DB_doc_gia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DB_quan_li.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DB_quan_li.Designer.cs">
-      <DependentUpon>DB_quan_li.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DB_thu_thu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DB_thu_thu.Designer.cs">
-      <DependentUpon>DB_thu_thu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="All User Control\UC_CaiDat.resx">
-      <DependentUpon>UC_CaiDat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_KhoSach_FormQuanLy.resx">
-      <DependentUpon>UC_KhoSach_FormQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_NhanSu_FormQuanLy.resx">
-      <DependentUpon>UC_NhanSu_FormQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_QuanLyMuonTra_FormQuanLy.resx">
-      <DependentUpon>UC_QuanLyMuonTra_FormQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_TongQuanQuanLy.resx">
-      <DependentUpon>UC_TongQuanQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_dang_nhap_thu_thu.resx">
-      <DependentUpon>UC_dang_nhap_thu_thu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_doc_gia_dang_nhap.resx">
-      <DependentUpon>UC_doc_gia_dang_nhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_Kham_pha_DG.resx">
-      <DependentUpon>UC_Kham_pha_DG.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_Kho_sach.resx">
-      <DependentUpon>UC_Kho_sach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_Quan_li_dang_nhap.resx">
-      <DependentUpon>UC_Quan_li_dang_nhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_them_sach.resx">
-      <DependentUpon>UC_them_sach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="All User Control\UC_TroLyAI_FormQuanLy.resx">
-      <DependentUpon>UC_TroLyAI_FormQuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DB_doc_gia.resx">
-      <DependentUpon>DB_doc_gia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DB_quan_li.resx">
-      <DependentUpon>DB_quan_li.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DB_thu_thu.resx">
-      <DependentUpon>DB_thu_thu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\shield-check_white.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\arrow-right %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\circle-check %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\circle-check.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\library.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\shield.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\shield-check %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\shield-check %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\shield-check.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\user %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\shield %281%29.png" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows7.0</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<RootNamespace>ThuVien</RootNamespace>
+		<AssemblyName>ThuVien</AssemblyName>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<!-- References cho Guna nếu bạn vẫn dùng DLL cũ -->
+	<ItemGroup>
+		<Reference Include="Guna.Charts.WinForms">
+			<HintPath>..\packages\Guna.Charts.WinForms.1.1.0\lib\net472\Guna.Charts.WinForms.dll</HintPath>
+		</Reference>
+		<Reference Include="Guna.UI2">
+			<HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<!-- Hình ảnh và file không biên dịch -->
+	<ItemGroup>
+		<None Include="Images\**\*.*" />
+		<None Include="App.config" />
+		<None Include="Properties\Settings.settings" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Guna.Charts.WinForms" Version="1.1.0" />
+		<PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.7" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
 </Project>

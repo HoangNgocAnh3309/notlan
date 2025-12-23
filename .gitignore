@@ -2,5 +2,7 @@ bin/
 obj/
 .vs/
 *.user
-*.exe
-*.dll
+*.suo
+*.cache
+*.log
+*.db

@@ -11,11 +11,9 @@ public partial class PhieuMuon
 
     public int MaNhanVien { get; set; }
 
-    public DateOnly NgayMuon { get; set; }
-
-    public DateOnly NgayTraDuKien { get; set; }
-
-    public DateOnly? NgayTraThucTe { get; set; }
+    public DateTime NgayMuon { get; set; }
+    public DateTime NgayTraDuKien { get; set; }
+    public DateTime? NgayTraThucTe { get; set; }
 
     public string? TrangThai { get; set; }
 

@@ -1,4 +1,5 @@
 ﻿using Guna.Charts.WinForms;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ThuVien.Models;
 namespace ThuVien.All_User_Control
 {
     public partial class UC_TongQuanQuanLy : UserControl
@@ -16,8 +17,68 @@ namespace ThuVien.All_User_Control
         public UC_TongQuanQuanLy()
         {
             InitializeComponent();
+            LoadThongKeSach();
         }
+        public void LoadThongKeSach()
+        {
+            using (var db = new ThuVienContext())
+            {
+                // =========================
+                // 1. TỔNG SỐ SÁCH
+                // =========================
+                int tongSach = db.Saches.Sum(s => s.SoLuong);
 
+                // =========================
+                // 2. SÁCH THÊM TRONG TUẦN
+                // =========================
+                DateTime today = DateTime.Today;
+
+                int diff = (7 + (today.DayOfWeek - DayOfWeek.Monday)) % 7;
+                DateTime startOfWeek = today.AddDays(-diff);
+                DateTime endOfWeek = startOfWeek.AddDays(7).AddTicks(-1);
+
+                int countNewBooks = db.Saches
+                    .Count(s => s.NgayThem >= startOfWeek && s.NgayThem <= endOfWeek);
+
+                // =========================
+                // 3. SÁCH ĐANG MƯỢN
+                // =========================
+                int soSachDangMuon = db.ChiTietPhieuMuons
+                    .Where(ct => ct.MaPhieuNavigation.TrangThai == "Đang mượn")
+                    .Select(ct => (int?)ct.SoLuong)
+                    .Sum() ?? 0;
+
+                // =========================
+                // 4. SÁCH QUÁ HẠN
+                // =========================
+                DateTime now = DateTime.Now;
+
+                int soSachQuaHan = db.ChiTietPhieuMuons
+                    .Where(ct =>
+                        ct.MaPhieuNavigation.TrangThai == "Đang mượn" &&
+                        ct.MaPhieuNavigation.NgayTraDuKien < now)
+                    .Select(ct => (int?)ct.SoLuong)
+                    .Sum() ?? 0;
+
+                // =========================
+                // 5. SÁCH SẴN SÀNG (TÍNH ĐỘNG)
+                // =========================
+                int soSachSanSang = tongSach - (soSachDangMuon + soSachQuaHan);
+
+                if (soSachSanSang < 0)
+                    soSachSanSang = 0; // phòng dữ liệu lỗi
+
+                // =========================
+                // 6. GÁN LÊN UI
+                // =========================
+                lblTongSach.Text = tongSach.ToString();
+                lbl_sosachtheotuan.Text = countNewBooks.ToString();
+                lblSoSachMuon.Text = soSachDangMuon.ToString();
+                lblQuaHan.Text = soSachQuaHan.ToString();
+                // nhớ thêm label này
+            }
+
+        }
         private void UC_TongQuanQuanLy_Load(object sender, EventArgs e)
         {
             gunaChartMuonTra.YAxes.GridLines.Display = true;

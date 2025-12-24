@@ -155,15 +155,19 @@ public partial class ThuVienContext : DbContext
             entity.Property(e => e.TenSach)
                 .HasMaxLength(200)
                 .HasColumnName("ten_sach");
-            entity.Property(e => e.TrangThai)
-                .HasMaxLength(50)
-                .HasDefaultValue("Sẵn sàng")
-                .HasColumnName("trang_thai");
+
+
+            // <-- thêm dòng này
+            entity.Property(e => e.NgayThem)
+                .HasColumnName("ngay_them")
+                .HasColumnType("datetime2")
+                .HasDefaultValueSql("GETDATE()");
 
             entity.HasOne(d => d.MaTheLoaiNavigation).WithMany(p => p.Saches)
                 .HasForeignKey(d => d.MaTheLoai)
                 .HasConstraintName("FK_sach_the_loai");
         });
+
 
         modelBuilder.Entity<TheLoai>(entity =>
         {

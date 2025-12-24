@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace ThuVien.All_User_Control
@@ -13,11 +9,12 @@ namespace ThuVien.All_User_Control
         public Sach()
         {
             InitializeComponent();
-
         }
+
         // Tên sách
         public void SetTenSach(string value) => lblTenSach.Text = value;
         public string GetTenSach() => lblTenSach.Text;
+
         // =========================
         // Tác giả
         public void SetTacGia(string value) => label8.Text = value;
@@ -34,7 +31,6 @@ namespace ThuVien.All_User_Control
         public void SetTrangThaiTheoSoLuong(int soLuongConLai)
         {
             string trangThai;
-
             if (soLuongConLai > 0)
                 trangThai = "Sẵn sàng(" + soLuongConLai + ")";
             else
@@ -53,16 +49,26 @@ namespace ThuVien.All_User_Control
                 lblTrangThai.FillColor = Color.FromArgb(50, Color.Green);
             }
         }
+
         public string GetTrangThai() => lblTrangThai.Text;
 
         private void lblTacGia_Paint(object sender, PaintEventArgs e)
         {
-
         }
-        public event Action<int> XoaSachEvent; // Event truyền MaSach
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public int MaSach { get; set; } // Lưu id của sách này
+        // Event xóa sách
+        public event Action<int> XoaSachEvent;
+
+        // THUỘC TÍNH MaSach - SỬA THEO CÁCH NÀY
+        private int _maSach;
+
+        [Browsable(false)]  // Ẩn khỏi Properties window
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)] // Quan trọng
+        public int MaSach
+        {
+            get => _maSach;
+            set => _maSach = value;
+        }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {

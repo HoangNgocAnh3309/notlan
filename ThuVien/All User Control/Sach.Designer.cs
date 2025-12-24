@@ -75,7 +75,6 @@
             lblTacGia.ShadowDecoration.CustomizableEdges = customizableEdges12;
             lblTacGia.Size = new Size(1263, 125);
             lblTacGia.TabIndex = 1;
-            lblTacGia.Paint += lblTacGia_Paint;
             // 
             // guna2Button5
             // 

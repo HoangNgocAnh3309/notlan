@@ -110,6 +110,7 @@
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button4.Size = new Size(42, 41);
             guna2Button4.TabIndex = 6;
+            guna2Button4.Click += guna2Button4_Click;
             // 
             // lblTrangThai
             // 

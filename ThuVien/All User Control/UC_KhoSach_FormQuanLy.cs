@@ -93,6 +93,26 @@ namespace ThuVien.All_User_Control
             LoadDanhSachSach();
         }
 
+        // THÊM PHƯƠNG THỨC SỬA SÁCH
+        private void SuaSach(int maSach)
+        {
+            try
+            {
+                // Tạo form sửa sách và truyền mã sách
+                suasach ss = new suasach(maSach); // SỬA DÒNG NÀY
+
+                // Sử dụng ShowDialog để chờ form đóng
+                ss.ShowDialog();
+
+                // Sau khi form sửa đóng, reload danh sách
+                LoadDanhSachSach();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi mở form sửa: {ex.Message}");
+            }
+        }
+
         // SỬA PHƯƠNG THỨC LoadDanhSachSach
         public void LoadDanhSachSach()
         {
@@ -127,6 +147,9 @@ namespace ThuVien.All_User_Control
 
                     // THÊM DÒNG NÀY: Gắn sự kiện xóa
                     uc.XoaSachEvent += XoaSach;
+
+                    // THÊM DÒNG NÀY: Gắn sự kiện sửa
+                    uc.SuaSachEvent += SuaSach; // THÊM DÒNG NÀY
 
                     flowLayoutPanel1.Controls.Add(uc);
                 }

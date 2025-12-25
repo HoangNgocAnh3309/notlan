@@ -10,6 +10,7 @@ namespace ThuVien.All_User_Control
         {
             InitializeComponent();
         }
+        public event Action<int> SuaSachEvent; // THÊM DÒNG NÀY
 
         // Tên sách
         public void SetTenSach(string value) => lblTenSach.Text = value;
@@ -76,6 +77,14 @@ namespace ThuVien.All_User_Control
             {
                 XoaSachEvent?.Invoke(MaSach);
             }
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            suasach ss = new suasach();
+            ss.Visible = true;
+            ss.BringToFront();
+            SuaSachEvent?.Invoke(MaSach);
         }
     }
 }

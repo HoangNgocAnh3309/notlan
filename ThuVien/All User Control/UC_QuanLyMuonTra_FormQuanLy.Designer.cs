@@ -28,186 +28,315 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_QuanLyMuonTra_FormQuanLy));
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnLichSu = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDangMuon = new Guna.UI2.WinForms.Guna2Button();
-            this.btnChoDuyet = new Guna.UI2.WinForms.Guna2Button();
-            this.btnTatCa = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1.SuspendLayout();
-            this.SuspendLayout();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            label2 = new Label();
+            label3 = new Label();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            btnLichSu = new Guna.UI2.WinForms.Guna2Button();
+            btnChoMuon = new Guna.UI2.WinForms.Guna2Button();
+            btnTatCa = new Guna.UI2.WinForms.Guna2Button();
+            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label1 = new Label();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            guna2Panel1.SuspendLayout();
+            guna2Panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // guna2Elipse1
             // 
-            this.guna2Elipse1.TargetControl = this;
+            guna2Elipse1.TargetControl = this;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
-            this.label2.Location = new System.Drawing.Point(25, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(301, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Xử lý các yêu cầu mượn sách và xác nhận trả sách.";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(100, 116, 139);
+            label2.Location = new Point(33, 71);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(395, 23);
+            label2.TabIndex = 3;
+            label2.Text = "Xử lý các yêu cầu mượn sách và xác nhận trả sách.";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Quản Lý Mượn Trả";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(31, 32);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(224, 32);
+            label3.TabIndex = 2;
+            label3.Text = "Quản Lý Mượn Trả";
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2Panel1.BorderRadius = 10;
-            this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.btnLichSu);
-            this.guna2Panel1.Controls.Add(this.btnDangMuon);
-            this.guna2Panel1.Controls.Add(this.btnChoDuyet);
-            this.guna2Panel1.Controls.Add(this.btnTatCa);
-            this.guna2Panel1.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel1.Location = new System.Drawing.Point(28, 86);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(953, 62);
-            this.guna2Panel1.TabIndex = 4;
+            guna2Panel1.BorderColor = Color.FromArgb(213, 218, 223);
+            guna2Panel1.BorderRadius = 10;
+            guna2Panel1.BorderThickness = 1;
+            guna2Panel1.Controls.Add(btnLichSu);
+            guna2Panel1.Controls.Add(btnChoMuon);
+            guna2Panel1.Controls.Add(btnTatCa);
+            guna2Panel1.Controls.Add(guna2TextBox1);
+            guna2Panel1.CustomizableEdges = customizableEdges13;
+            guna2Panel1.Location = new Point(37, 132);
+            guna2Panel1.Margin = new Padding(4, 5, 4, 5);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            guna2Panel1.Size = new Size(1271, 95);
+            guna2Panel1.TabIndex = 4;
             // 
             // btnLichSu
             // 
-            this.btnLichSu.BorderRadius = 10;
-            this.btnLichSu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnLichSu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnLichSu.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnLichSu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLichSu.FillColor = System.Drawing.Color.White;
-            this.btnLichSu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLichSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnLichSu.Location = new System.Drawing.Point(281, 14);
-            this.btnLichSu.Name = "btnLichSu";
-            this.btnLichSu.Size = new System.Drawing.Size(72, 34);
-            this.btnLichSu.TabIndex = 8;
-            this.btnLichSu.Text = "Lịch sử";
-            this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
+            btnLichSu.BorderRadius = 10;
+            btnLichSu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnLichSu.CheckedState.FillColor = Color.FromArgb(224, 231, 255);
+            btnLichSu.CheckedState.ForeColor = Color.FromArgb(67, 56, 202);
+            btnLichSu.CustomizableEdges = customizableEdges5;
+            btnLichSu.DisabledState.BorderColor = Color.DarkGray;
+            btnLichSu.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLichSu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLichSu.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLichSu.FillColor = Color.White;
+            btnLichSu.Font = new Font("Segoe UI", 9F);
+            btnLichSu.ForeColor = Color.FromArgb(71, 85, 105);
+            btnLichSu.Location = new Point(255, 22);
+            btnLichSu.Margin = new Padding(4, 5, 4, 5);
+            btnLichSu.Name = "btnLichSu";
+            btnLichSu.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnLichSu.Size = new Size(96, 52);
+            btnLichSu.TabIndex = 8;
+            btnLichSu.Text = "Lịch sử";
             // 
-            // btnDangMuon
+            // btnChoMuon
             // 
-            this.btnDangMuon.BorderRadius = 10;
-            this.btnDangMuon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnDangMuon.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnDangMuon.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnDangMuon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangMuon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDangMuon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDangMuon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDangMuon.FillColor = System.Drawing.Color.White;
-            this.btnDangMuon.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDangMuon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnDangMuon.Location = new System.Drawing.Point(181, 14);
-            this.btnDangMuon.Name = "btnDangMuon";
-            this.btnDangMuon.Size = new System.Drawing.Size(94, 34);
-            this.btnDangMuon.TabIndex = 7;
-            this.btnDangMuon.Text = "Đang mượn";
-            // 
-            // btnChoDuyet
-            // 
-            this.btnChoDuyet.BorderRadius = 10;
-            this.btnChoDuyet.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnChoDuyet.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnChoDuyet.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnChoDuyet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnChoDuyet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnChoDuyet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnChoDuyet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChoDuyet.FillColor = System.Drawing.Color.White;
-            this.btnChoDuyet.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnChoDuyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnChoDuyet.Location = new System.Drawing.Point(93, 14);
-            this.btnChoDuyet.Name = "btnChoDuyet";
-            this.btnChoDuyet.Size = new System.Drawing.Size(82, 34);
-            this.btnChoDuyet.TabIndex = 6;
-            this.btnChoDuyet.Text = "Chờ duyệt";
+            btnChoMuon.BorderRadius = 10;
+            btnChoMuon.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnChoMuon.CheckedState.FillColor = Color.FromArgb(224, 231, 255);
+            btnChoMuon.CheckedState.ForeColor = Color.FromArgb(67, 56, 202);
+            btnChoMuon.CustomizableEdges = customizableEdges7;
+            btnChoMuon.DisabledState.BorderColor = Color.DarkGray;
+            btnChoMuon.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnChoMuon.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnChoMuon.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnChoMuon.FillColor = Color.White;
+            btnChoMuon.Font = new Font("Segoe UI", 9F);
+            btnChoMuon.ForeColor = Color.FromArgb(71, 85, 105);
+            btnChoMuon.Location = new Point(124, 22);
+            btnChoMuon.Margin = new Padding(4, 5, 4, 5);
+            btnChoMuon.Name = "btnChoMuon";
+            btnChoMuon.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnChoMuon.Size = new Size(109, 52);
+            btnChoMuon.TabIndex = 6;
+            btnChoMuon.Text = "Đang mượn";
             // 
             // btnTatCa
             // 
-            this.btnTatCa.BorderRadius = 10;
-            this.btnTatCa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnTatCa.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.btnTatCa.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(56)))), ((int)(((byte)(202)))));
-            this.btnTatCa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTatCa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTatCa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTatCa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTatCa.FillColor = System.Drawing.Color.White;
-            this.btnTatCa.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnTatCa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
-            this.btnTatCa.Location = new System.Drawing.Point(15, 14);
-            this.btnTatCa.Name = "btnTatCa";
-            this.btnTatCa.Size = new System.Drawing.Size(72, 34);
-            this.btnTatCa.TabIndex = 5;
-            this.btnTatCa.Text = "Tất cả";
+            btnTatCa.BorderRadius = 10;
+            btnTatCa.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnTatCa.Checked = true;
+            btnTatCa.CheckedState.FillColor = Color.FromArgb(224, 231, 255);
+            btnTatCa.CheckedState.ForeColor = Color.FromArgb(67, 56, 202);
+            btnTatCa.CustomizableEdges = customizableEdges9;
+            btnTatCa.DisabledState.BorderColor = Color.DarkGray;
+            btnTatCa.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnTatCa.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnTatCa.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnTatCa.FillColor = Color.White;
+            btnTatCa.Font = new Font("Segoe UI", 9F);
+            btnTatCa.ForeColor = Color.FromArgb(71, 85, 105);
+            btnTatCa.Location = new Point(20, 22);
+            btnTatCa.Margin = new Padding(4, 5, 4, 5);
+            btnTatCa.Name = "btnTatCa";
+            btnTatCa.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnTatCa.Size = new Size(96, 52);
+            btnTatCa.TabIndex = 5;
+            btnTatCa.Text = "Tất cả";
             // 
             // guna2TextBox1
             // 
-            this.guna2TextBox1.BorderRadius = 10;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
-            this.guna2TextBox1.Location = new System.Drawing.Point(700, 14);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
-            this.guna2TextBox1.PlaceholderText = "Tìm kiếm độc giả hoặc sách...";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(232, 34);
-            this.guna2TextBox1.TabIndex = 4;
+            guna2TextBox1.BorderRadius = 10;
+            guna2TextBox1.Cursor = Cursors.IBeam;
+            guna2TextBox1.CustomizableEdges = customizableEdges11;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.FillColor = Color.FromArgb(59, 59, 59);
+            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2TextBox1.ForeColor = Color.White;
+            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(213, 218, 223);
+            guna2TextBox1.IconLeft = (Image)resources.GetObject("guna2TextBox1.IconLeft");
+            guna2TextBox1.Location = new Point(933, 22);
+            guna2TextBox1.Margin = new Padding(4, 6, 4, 6);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PlaceholderForeColor = Color.FromArgb(197, 202, 209);
+            guna2TextBox1.PlaceholderText = "Tìm kiếm độc giả hoặc sách...";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2TextBox1.Size = new Size(309, 52);
+            guna2TextBox1.TabIndex = 4;
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.guna2Panel2.BorderRadius = 10;
-            this.guna2Panel2.BorderThickness = 1;
-            this.guna2Panel2.Location = new System.Drawing.Point(28, 175);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(953, 407);
-            this.guna2Panel2.TabIndex = 5;
+            guna2Panel2.BorderColor = Color.Black;
+            guna2Panel2.BorderRadius = 10;
+            guna2Panel2.BorderThickness = 1;
+            guna2Panel2.Controls.Add(flowLayoutPanel1);
+            guna2Panel2.Controls.Add(label8);
+            guna2Panel2.Controls.Add(label7);
+            guna2Panel2.Controls.Add(label6);
+            guna2Panel2.Controls.Add(label5);
+            guna2Panel2.Controls.Add(label4);
+            guna2Panel2.Controls.Add(label1);
+            guna2Panel2.CustomizableEdges = customizableEdges3;
+            guna2Panel2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            guna2Panel2.ForeColor = Color.FromArgb(71, 85, 105);
+            guna2Panel2.Location = new Point(37, 269);
+            guna2Panel2.Margin = new Padding(4, 5, 4, 5);
+            guna2Panel2.Name = "guna2Panel2";
+            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Panel2.Size = new Size(1271, 626);
+            guna2Panel2.TabIndex = 5;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.BorderStyle = BorderStyle.FixedSingle;
+            flowLayoutPanel1.Location = new Point(0, 76);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1271, 535);
+            flowLayoutPanel1.TabIndex = 6;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label8.ForeColor = Color.FromArgb(71, 85, 105);
+            label8.Location = new Point(1129, 20);
+            label8.Name = "label8";
+            label8.Size = new Size(97, 23);
+            label8.TabIndex = 5;
+            label8.Text = "Hành động";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label7.ForeColor = Color.FromArgb(71, 85, 105);
+            label7.Location = new Point(972, 20);
+            label7.Name = "label7";
+            label7.Size = new Size(87, 23);
+            label7.TabIndex = 4;
+            label7.Text = "Trạng thái";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label6.ForeColor = Color.FromArgb(71, 85, 105);
+            label6.Location = new Point(771, 20);
+            label6.Name = "label6";
+            label6.Size = new Size(140, 23);
+            label6.TabIndex = 3;
+            label6.Text = "Ngày trả dự kiến";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label5.ForeColor = Color.FromArgb(71, 85, 105);
+            label5.Location = new Point(580, 20);
+            label5.Name = "label5";
+            label5.Size = new Size(116, 23);
+            label5.TabIndex = 2;
+            label5.Text = "Ngày yêu cầu";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label4.ForeColor = Color.FromArgb(71, 85, 105);
+            label4.Location = new Point(305, 20);
+            label4.Name = "label4";
+            label4.Size = new Size(46, 23);
+            label4.TabIndex = 1;
+            label4.Text = "Sách";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label1.ForeColor = Color.FromArgb(71, 85, 105);
+            label1.Location = new Point(45, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(68, 23);
+            label1.TabIndex = 0;
+            label1.Text = "Độc giả";
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.BorderRadius = 10;
+            guna2Button1.CustomizableEdges = customizableEdges1;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(1083, 38);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button1.Size = new Size(225, 56);
+            guna2Button1.TabIndex = 6;
+            guna2Button1.Text = "Thêm lịch mượn sách";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // UC_QuanLyMuonTra_FormQuanLy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Name = "UC_QuanLyMuonTra_FormQuanLy";
-            this.Size = new System.Drawing.Size(1015, 620);
-            this.Load += new System.EventHandler(this.UC_QuanLyMuonTra_FormQuanLy_Load);
-            this.guna2Panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.White;
+            Controls.Add(guna2Button1);
+            Controls.Add(guna2Panel2);
+            Controls.Add(guna2Panel1);
+            Controls.Add(label2);
+            Controls.Add(label3);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "UC_QuanLyMuonTra_FormQuanLy";
+            Size = new Size(1353, 954);
+            Load += UC_QuanLyMuonTra_FormQuanLy_Load;
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel2.ResumeLayout(false);
+            guna2Panel2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -219,8 +348,15 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Button btnTatCa;
         private Guna.UI2.WinForms.Guna2Button btnLichSu;
-        private Guna.UI2.WinForms.Guna2Button btnDangMuon;
-        private Guna.UI2.WinForms.Guna2Button btnChoDuyet;
+        private Guna.UI2.WinForms.Guna2Button btnChoMuon;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Label label1;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

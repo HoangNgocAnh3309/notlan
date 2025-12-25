@@ -56,6 +56,7 @@
             // 
             // lblTacGia
             // 
+            lblTacGia.AutoScroll = true;
             lblTacGia.BackColor = Color.White;
             lblTacGia.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             lblTacGia.Controls.Add(guna2Button5);

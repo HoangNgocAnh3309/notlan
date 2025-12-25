@@ -98,12 +98,12 @@ namespace ThuVien
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             var uc = guna2Panel5.Controls
-                      .OfType<UC_NhanSu_FormQuanLy>()
+                      .OfType<UC_NhanVien_FromQuanLy>()
                       .FirstOrDefault();
 
             if (uc == null)
             {
-                uc = new UC_NhanSu_FormQuanLy();
+                uc = new UC_NhanVien_FromQuanLy();
                 uc.Dock = DockStyle.Fill;
                 guna2Panel5.Controls.Add(uc);
             }
